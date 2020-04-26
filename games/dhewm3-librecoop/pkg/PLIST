@@ -1,0 +1,4 @@
+@comment $OpenBSD: PLIST,v$
+@so lib/dhewm3/librecoop.so
+@so lib/dhewm3/librecoopd3xp.so
+share/doc/pkg-readmes/${PKGSTEM}

@@ -1,0 +1,21 @@
+$OpenBSD$
+
+Index: d3xp/MultiplayerGame.cpp
+--- d3xp/MultiplayerGame.cpp.orig
++++ d3xp/MultiplayerGame.cpp
+@@ -1799,7 +1799,7 @@ void idMultiplayerGame::ExecuteVote( void ) {
+ 				SavePersistentPlayersInfo(); //saving player info in Coop for the next map
+ 
+ 				if (nextMap != "") {
+-					gameLocal.Printf("Loading next map ", nextMap);
++					gameLocal.Printf("Loading next map %s", nextMap.c_str());
+ 					si_map.SetString(nextMap);
+ 					gameLocal.MapRestart();
+ 				}
+@@ -4693,4 +4693,4 @@ void idMultiplayerGame::SavePersistentPlayersInfo( voi
+ 		}
+ 		gameLocal.GetPersistentPlayerInfo(i); //This function basically save the current player persistent info
+ 	}
+-}
+\ No newline at end of file
++}

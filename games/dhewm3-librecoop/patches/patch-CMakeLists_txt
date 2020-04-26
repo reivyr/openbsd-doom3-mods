@@ -1,0 +1,25 @@
+$OpenBSD$
+
+Index: CMakeLists.txt
+--- CMakeLists.txt.orig
++++ CMakeLists.txt
+@@ -103,8 +103,6 @@ if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_C_COMPILER_ID STRE
+ 	set(CMAKE_C_FLAGS_DEBUG "-g -D_DEBUG -O1")
+ 	set(CMAKE_C_FLAGS_DEBUGALL "-g -ggdb -D_DEBUG")
+ 	set(CMAKE_C_FLAGS_PROFILE "-g -ggdb -D_DEBUG -O1 -fno-omit-frame-pointer")
+-	set(CMAKE_C_FLAGS_RELEASE "-O2 -fno-unsafe-math-optimizations -fno-math-errno -fno-trapping-math -fomit-frame-pointer")
+-	set(CMAKE_C_FLAGS_RELWITHDEBINFO "-O2 -g -ggdb -fno-unsafe-math-optimizations -fno-math-errno -fno-trapping-math -fno-omit-frame-pointer")
+ 	set(CMAKE_C_FLAGS_MINSIZEREL "-Os -fno-unsafe-math-optimizations -fno-math-errno -fno-trapping-math -fomit-frame-pointer")
+ 
+ 	set(CMAKE_CXX_FLAGS_DEBUGALL ${CMAKE_C_FLAGS_DEBUGALL})
+@@ -197,9 +195,7 @@ if(WIN32)
+ 	add_definitions(-D_WIN32_WINNT=0x0501)
+ endif()
+ 
+-set(bindir		"${CMAKE_INSTALL_FULL_BINDIR}")
+-set(libdir		"${CMAKE_INSTALL_FULL_LIBDIR}/dhewm3")
+-set(datadir		"${CMAKE_INSTALL_FULL_DATADIR}/dhewm3")
++set(libdir		"${CMAKE_INSTALL_PREFIX}/lib/dhewm3")
+ 
+ TEST_BIG_ENDIAN(is_big_endian)
+ 

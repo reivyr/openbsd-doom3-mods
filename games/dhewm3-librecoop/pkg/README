@@ -1,0 +1,27 @@
+$OpenBSD: README,v 1.2 2018/09/04 12:46:12 espie Exp $
+
++-----------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-----------------------------------------------------------------------
+
+Librecoop
+=========
+
+To play this co-op mod for Doom 3 you need to setup dhewm3 first, after
+that you need to download the pk4 files of the mod from
+
+https://www.moddb.com/mods/librecoop-dhewm3-coop/downloads/librecoop-
+tech-demo-4-windows-32bits1
+
+then:
+$ unrar x LibreCoop_TechDemo4_Win32.rar
+$ cp -R librecoop librecoopd3xp $HOME/.config/dhewm3/
+
+Finally you can play the mod with:
+$ dhewm3 +set fs_game librecoop
+
+Connection
+----------
+This mod uses the UDP port 27666 for the connection.
+Sometimes when you want to join a game the game ask you about the CDKEY,
+in the case of the Steam version you can obtain it via the Steam client.
