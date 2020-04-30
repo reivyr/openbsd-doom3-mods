@@ -8,13 +8,17 @@ Librecoop
 =========
 
 To play this co-op mod for Doom 3 you need to setup dhewm3 first, after
-that you need to download the pk4 files of the mod from
+that you need to download the pk4 files of the mod from these links:
 
 https://www.moddb.com/mods/librecoop-dhewm3-coop/downloads/librecoop-
 tech-demo-4-windows-32bits1
 
+https://www.moddb.com/mods/librecoop-dhewm3-coop/addons/opencoop-maps-
+for-librecoop1
+
 then:
 $ unrar x LibreCoop_TechDemo4_Win32.rar
+$ unrar x LibreCoop_OpenCoop_Maps.rar
 $ cp -R librecoop librecoopd3xp $HOME/.config/dhewm3/
 
 Finally you can play the mod with:
