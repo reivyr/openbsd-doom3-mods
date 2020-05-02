@@ -2,12 +2,12 @@
 
 ONLY_FOR_ARCHS =	amd64 i386
 
-V =	0.0.0.20191228
+V =	0.0.0.20200501
 DISTNAME =	dhewm3-librecoop-${V}
 
 GH_ACCOUNT =		Stradex
 GH_PROJECT =		librecoop
-GH_COMMIT =		97ba7384b63c2f6c2a50196177f9d0985b02d609
+GH_COMMIT =		5a900df87c9d09fc4358254df7fbfd4aef7a8221
 
 COMMENT =		A Basic Coop for Doom 3
 
